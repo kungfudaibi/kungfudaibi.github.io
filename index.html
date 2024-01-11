@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人网页</title>
     <link rel="stylesheet" href="css/b.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>  
-
-
+    <script>
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+</script>
 </head>
 
 <body>
@@ -22,68 +24,21 @@
             <li><a href="study.html">菜鸟教程模板</a>
             <li><a href="shenghuo.html">生活日常</a>
             <li><a href="qita.html">其他的</a>
+             <li>
+                <a href="java.html">一次考试作业</a>
+             </li>   
+             <li><a href="homework.md">作业</a></li>
+             <li><a href="donghua.html">css3动画</a></li>
     </nav>
 
-    <main>
-        <h1>这是一个个人搭建的学习网站</h1>
+    <main class="a">
+        <h1 >这是一个个人搭建的学习网站</h1>
+        <p id="demo">这里告诉你</p>
+        <button type="button" onclick="displayDate()">今天几号？</button>
+        <button type="button" onclick="alert('你好')" style="color: brown; background-color: blue;">点我</button>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                name: 'Google Engineer',
-                bio: 'Highly competent and experienced Google software engineer...',
-                experience: [
-                    {
-                        role: 'Senior Software Engineer',
-                        company: 'Google',
-                        description: 'Developed and maintained key features for Google Search...'
-                    },
-                    // more experience...
-                ],
-                skills: ['JavaScript', 'Python', 'C++', 'Google Cloud Platform'],
-            },
-        });
-    </script>
-    <script>
-        new p5(p => {
-            let circles = [];
-            p.setup = function () {
-                p.createCanvas(p.windowWidth, p.windowHeight);
-                for (let i = 0; i < 100; i++) {
-                    circles[i] = {
-                        x: p.random(p.width),
-                        y: p.random(p.height),
-                        r: p.random(20, 60),
-                        col: p.color(p.random(100, 255), p.random(100, 255), p.random(100, 255), p.random(50, 100))
-                    };
-                }
-            };
-            p.draw = function () {
-                p.background(220);
-                for (let i = 0; i < circles.length; i++) {
-                    let c = circles[i];
-                    p.fill(c.col);
-                    p.noStroke();
-                    p.ellipse(c.x, c.y, c.r * 2);
-                }
-            };
-            p.mouseClicked = function () {
-                circles.push({
-                    x: p.mouseX,
-                    y: p.mouseY,
-                    r: p.random(20, 60),
-                    col: p.color(p.random(100, 255), p.random(100, 255), p.random(100, 255), p.random(50, 100))
-                });
-            };
-        });
-    </script>
-
-
-
-
+    
 </body>
 
 </html>

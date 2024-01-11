@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myfirst {
+            from {
+                background: red;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+
+        @-webkit-keyframes myfirst
+
+        /* Safari and Chrome */
+            {
+            from {
+                background: red;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" style="width: 900px;margin: auto;">
+        <div id="header" style="background-color: #FFA500;">
+            <h1 style="margin-bottom: 0;">主要网页标题</h1>
+        </div>
+        <div id="menu"
+            style="height: 500px;width: 600px;float: right;background-image: linear-gradient(to bottom right, red , yellow)">
+            <ul>菜单
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>javascript</li>
+            </ul>
+        </div>
+        <div id="content"
+            style="background-color: firebrick; height: 500px; width: 300px;float: left;background-image: linear-gradient(to bottom left,blue,yellow); animation:myfirst 5s;-webkit-animation:myfirst 5s;">
+            内容在这里
+            <img src="./image/山西大学.jpg" alt="" style="width: 100px;">
+        </div>
+        <footer style="margin:399px ;">runoob.com</footer>
+
+    </div>
+</body>
+
+</html>
