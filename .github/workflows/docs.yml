@@ -28,16 +28,13 @@ jobs:
           repository: ${{ github.repository }}
           ref: gh-pages
 
-      - name: Push to gh-pages branch
-        uses: actions/upload-artifact@v3
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
         with:
-          name: build
-          path: docs/.vuepress/dist
-
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: docs/.vuepress/dist # 构建后的输出目录
-          github_token: ${{ secrets.ACCESS_TOKEN }}
-          # 这里不需要指定 publish_dir，因为 gh-pages 会自动使用当前目录
-          # 也可以使用 ${{ github.ref }} 来获取当前分支名称
+          # 部署到 gh-pages 分支
+          target_branch: gh-pages
+          # 部署目录为 VuePress 的默认输出目录
+          build_dir: docs/.vuepress/dist
+        env:
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
