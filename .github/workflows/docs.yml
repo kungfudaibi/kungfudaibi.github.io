@@ -32,12 +32,12 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: ./.vuepress/dist
+          path: docs/.vuepress/dist
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: ./vuepress/dist # 构建后的输出目录
+          publish_dir: docs/.vuepress/dist # 构建后的输出目录
           github_token: ${{ secrets.ACCESS_TOKEN }}
           # 这里不需要指定 publish_dir，因为 gh-pages 会自动使用当前目录
           # 也可以使用 ${{ github.ref }} 来获取当前分支名称
