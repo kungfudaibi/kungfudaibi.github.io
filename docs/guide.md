@@ -10,7 +10,7 @@ next: /linux
 接下来我会用几句话解释一些基本概念，请你用**开始**一节中提到的方法搞懂你不知道的名词
 :::
 
-* 你正在使用的**操作系统** 大概率是windows，它有着标志性的四窗格logo，你的一切行为都是在这个操作系统上进行的，另一个常见的操作系统常见的操作系统是[linux](/linux.md)
+* 你正在使用的**操作系统** 大概率是windows，它有着标志性的四窗格logo，你的一切行为都是在这个操作系统上进行的，另一个常见的操作系统是[linux](/linux.md)
 
 ![windows logo](image/guide/windows.png =200x200)
 
@@ -51,6 +51,7 @@ next: /linux
     * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * web:
     * [WebStorm](https://www.jetbrains.com/webstorm/)
+
 :::tip
 还记得么？你可以使用JetBrains学生包免费使用这些IDE
 :::
@@ -72,6 +73,7 @@ csdiy已经涵盖了大部分计算机方向的优质课程，可是大多优质
 :::
 
 * [一生一芯](https://ysyx.oscc.cc/docs/)
+
 :::tip
 这个项目教你从零开始造一个cpu，如果你对计算机的底层不感兴趣，可以只参考预学习部分，里面汇集了一些相当好的资源，尤其是学习c语言的
 :::

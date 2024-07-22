@@ -1,6 +1,6 @@
 ---
 title: AI
-prev: /security
+prev: /network
 next: /about
 ---
 # Artificial Intelligence
