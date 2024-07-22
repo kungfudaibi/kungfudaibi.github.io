@@ -1,0 +1,34 @@
+name: Deploy VuePress to gh-pages
+
+on:
+  push:
+    branches:
+      - main  # 触发分支，可以根据实际情况修改
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build VuePress
+        run: npm run docs:build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./docs/.vuepress/dist  # VuePress 构建后的输出目录
+          publish_branch: gh-pages  # 推送到的目标分支
+
+
