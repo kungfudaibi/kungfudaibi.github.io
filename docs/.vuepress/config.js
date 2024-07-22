@@ -19,7 +19,7 @@ export default defineUserConfig({
       { text: 'Linux之旅', link: '/linux.md'},
       { text: '超算', link: '/HPC.md'},
       { text: '算法', link: '/algorithm.md'},
-      { text: '网络安全', link: '/security.md'},
+      { text: '网络安全', link: '/network.md'},
       { text: '人工智能', link: '/AI.md'},
       { text: '关于', link: '/about.md'},
       { text: 'GitHub', link: 'https://github.com/kungfudaibi/kungfudaibi.github.io'},
