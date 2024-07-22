@@ -1,7 +1,7 @@
 ---
 title: 算法
 prev: /HPC
-next: /security
+next: /network
 ---
 > 程序等于数据结构 + 算法
 # 算法
