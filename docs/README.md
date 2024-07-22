@@ -9,7 +9,7 @@ actions:
 
 
 
-footer: GFDL Licensed 
+footer: MIT Licensed 
 ---
 
 
