@@ -2,7 +2,8 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { searchProPlugin } from "vuepress-plugin-search-pro"
+import { giscusPlugin } from "vuepress-plugin-giscus"
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -41,6 +42,12 @@ export default defineUserConfig({
     }),
     searchProPlugin({
       indexContent:true,
+    }),
+    giscusPlugin({
+      repo: 'kungfudaibi/kungfudaibi.github.io',
+      repoId: 'R_kgDOKpEcCQ',
+      category: 'pathname',
+      categoryId: 'DIC_kwDOKpEcCc4ChEoG',
     }),
   ],
   bundler: viteBundler(),
