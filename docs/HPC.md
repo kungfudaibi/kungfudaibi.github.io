@@ -29,9 +29,10 @@ HPC(High Performance Computing)是高性能计算的缩写，是一种利用计�
 * 线性代数
 * 模型优化方法
 * 各种高效工具
-  :::tip
+
+:::tip
   HPC要求的基础技能是非常广泛的，需要掌握多种编程语言、并行模型、计算机系统基础、线性代数等知识，你可在[这里](https://github.com/Ayanokoji-li/HPC-tutorial?tab=readme-ov-file)找到一篇相当不错的入门教程
-  :::
+:::
 
 ## 山西大学超算队
 
