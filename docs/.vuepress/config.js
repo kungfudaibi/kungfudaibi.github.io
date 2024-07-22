@@ -3,8 +3,7 @@ import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
 import { searchProPlugin } from "vuepress-plugin-search-pro"
-import { giscusPlugin } from "vuepress-plugin-giscus"
-
+import { commentPlugin } from '@vuepress/plugin-comment'
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '山西大学开源软件协会',
@@ -43,11 +42,12 @@ export default defineUserConfig({
     searchProPlugin({
       indexContent:true,
     }),
-    giscusPlugin({
-      repo: 'kungfudaibi/kungfudaibi.github.io',
-      repoId: 'R_kgDOKpEcCQ',
-      category: 'pathname',
-      categoryId: 'DIC_kwDOKpEcCc4ChEoG',
+    commentPlugin({
+      provider: "Giscus",
+      repo: "kungfudaibi/kungfudaibi.github.io",
+      repoId: "R_kgDOKpEcCQ",
+      category: "Announcements",
+      categoryId: "DIC_kwDOKpEcCc4ChEoG",
     }),
   ],
   bundler: viteBundler(),
