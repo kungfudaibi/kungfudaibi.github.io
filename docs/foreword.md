@@ -21,9 +21,9 @@ next: /start.md
 阅读文档是程序员的基本功，这片文档有很多链接指向其他的文档，比如说[archwiki](https://wiki.archlinux.org/)，你不必一次性阅读完所有的内容，可以放在收藏夹里，有空的时候再看，或者遇到问题的时候再来查阅。
 
 感谢以下参与者的贡献，如果你想参与编辑本项目，请查看[关于本项目](/about.md)。
-<p align="center">
+<p align="left">
     <a href="https://github.com/kungfudaibi/kungfudaibi.github.io/graphs/contributors">
-        <img width="70" src="https://contrib.rocks/image?repo=kungfudaibi/kungfudaibi.github.io&max=300&columns=16" />
+        <img width="100" src="https://contrib.rocks/image?repo=kungfudaibi/kungfudaibi.github.io&max=300&columns=5" />
     </a>
 </p>
 
