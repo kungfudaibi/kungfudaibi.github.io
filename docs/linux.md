@@ -7,7 +7,7 @@ next: /HPC
 --Linus
 # Linux之旅
 :::important
-请阅读[linux101](https://101.ustclug.org/),[命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md),[The missing class](https://missing-semester-cn.github.io/)
+请阅读[linux101](https://101.ustclug.org/),[命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md),[The missing semester](https://missing-semester-cn.github.io/)
 :::
 ## 为什么要使用Linux
 * 拥抱开源
@@ -21,7 +21,7 @@ next: /HPC
 
 * 学到更多
 
-windows非常稳定，所以你可能不会遇到显卡掉了，声音没了，亮度调节喜欢把自己调到最暗等等一系列古怪的问题，为了修好这些问题你可能得耗费一个上午甚至好几天，不过相较于你在解决这些问题过程中的收获来说，这都是值得的。你会在不断地受挫中变得更加坚韧，也会不断受到社区的帮助，许多发行版的维护都是由社区进行的，比如说archlinux，除了货币，还有东西能把不同人种、国籍、基本毫无交集的人聚集起来做成一件了不起的事情，那就是兴趣。
+windows非常稳定，所以你可能不会遇到显卡掉了，声音没了，亮度调节喜欢把自己调到最暗等等一系列古怪的问题，但Linux桌面端并不是那么稳定，为了修好这些问题你可能得耗费一个上午甚至好几天，不过相较于你在解决这些问题过程中的收获来说，这都是值得的。你会在不断地受挫中变得更加坚韧，也会不断受到社区的帮助，许多发行版的维护都是由社区进行的，比如说archlinux，除了货币，还有东西能把不同人种、国籍、基本毫无交集的人聚集起来做成一件了不起的事情，那就是兴趣。
 :::info
 笔者认识的大佬都喜欢把linux当作自己的日常开发工具，经常使用linux的人也会对一些提高开发效率的工具相当熟悉，比如说vim,ssh等；他们也喜欢个性化配置自己的shell,比如说使用zsh的插件或者使用oh-my-zsh，oh-my-bash，在～/.zshrc里设置自己常用命令的别名，你的默认shell一般是bash,你也可以自己试着配置
 :::
