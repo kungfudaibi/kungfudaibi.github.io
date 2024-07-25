@@ -77,7 +77,9 @@ csdiy已经涵盖了大部分计算机方向的优质课程，可是大多优质
 :::tip
 这个项目教你从零开始造一个cpu，如果你对计算机的底层不感兴趣，可以只参考预学习部分，里面汇集了一些相当好的资源，尤其是学习c语言的
 :::
-
+:::important
+在csdiy和一生一芯中提到的必学工具本文不再赘述，可以参考[the missing semester of your cs education](https://missing-semester-cn.github.io/)
+:::
 ## 一些建议
 * talk is cheap,show me the code
 
