@@ -33,7 +33,13 @@ HPC(High Performance Computing)是高性能计算的缩写，是一种利用计�
 :::tip
   HPC要求的基础技能是非常广泛的，需要掌握多种编程语言、并行模型、计算机系统基础、线性代数等知识，你可在[这里](https://github.com/Ayanokoji-li/HPC-tutorial?tab=readme-ov-file)找到一篇相当不错的入门教程
 :::
+## HPCgames
 
+[HPCgames](https://hpcgame.pku.edu.cn/)是北京大学举办的一场面向全国高校的高性能计算竞赛，含金量极高，你可以在[这里](https://github.com/lcpu-club/hpcgame_1st_problems)找到第一届的题目
+
+:::info
+[lcpu-club](https://github.com/lcpu-club)即北京大学linux俱乐部，只能说北大还是北大
+:::
 ## 山西大学超算队
 
 :::tip
