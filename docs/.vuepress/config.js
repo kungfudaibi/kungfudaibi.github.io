@@ -12,7 +12,6 @@ export default defineUserConfig({
     logo: '/image/logo.png',
     // 修改导航栏配置
     navbar: [
-      { text: 'Home', link: '/' },
       { text: '前言', link: '/foreword.md' },
       { text: '开始', link: '/start.md' },
       { text: '自学指南', link: '/guide.md'},
@@ -21,6 +20,7 @@ export default defineUserConfig({
       { text: '算法', link: '/algorithm.md'},
       { text: '网络安全', link: '/network.md'},
       { text: '人工智能', link: '/AI.md'},
+      { text: '百团', link: '/zhaoxin.md'},
       { text: '关于', link: '/about.md'},
       { text: 'GitHub', link: 'https://github.com/kungfudaibi/kungfudaibi.github.io'},
     ],
@@ -38,6 +38,7 @@ export default defineUserConfig({
       imgMark: true,
       // 启用图片大小
       imgSize: true,
+
     }),
     searchProPlugin({
       indexContent:true,
