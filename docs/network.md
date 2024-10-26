@@ -104,7 +104,10 @@ next: /AI
 :::
 安全领域不止网络安全，还有加密的安全，二进制的安全，可执行文件的安全等等，通过学习CTF的众多方向，你将包括但不限于搞明白挂是怎么写的，程序的运行的底层逻辑，加密是干嘛的等等，逐步成长为一个全能的黑客
 :::info
-[geeksgame](https://geekgame.pku.edu.cn/#/game)北京大学举办的比赛，允许校外选手参赛。
+[GeekGame](https://geekgame.pku.edu.cn/#/game)北京大学举办的比赛，允许校外选手参赛。
+:::
+:::info
+[pwn.colleage](https://geekgame.pku.edu.cn/#/game)ASU(亚利桑那州大学的课程)，这是一个开源课程，同时这个课程与普通课程不同，大家通过完成不同的任务来进行学习。
 :::
 
 ## 山西大学计算机与网络技术协会
