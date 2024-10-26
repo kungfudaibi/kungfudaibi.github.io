@@ -25,6 +25,7 @@ export default defineUserConfig({
         text: 'blog', 
         children:[
           { text: 'zhujiechong', link: '/blog/zhujiechong.md'},
+          { text: 'thefirsts.md', link: '/blog/thefirsts.md'}
         ]
       },
       { text: '关于', link: '/about.md'},
