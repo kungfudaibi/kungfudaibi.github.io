@@ -168,8 +168,3 @@ npm run docs:dev
 
 
 
-## 收款码
-
-加入社团团费30元，付款码：
-![收款码](image/zhaoxin/wd.jpeg)
-![qq群](image/zhaoxin/qq.jpg)
