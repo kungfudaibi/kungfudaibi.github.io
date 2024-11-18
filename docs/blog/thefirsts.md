@@ -2,9 +2,11 @@
 
 welcome to SXU helper
 
-![1731895574709](image/thefirsts/1731895574709.png)
+![image](image/thefirsts/1731895574709.png)
 
 # 关于本项目
+
+github地址：https://github.com/xu-zih/sxujw_helper
 
 本项目是python 程序设计实验课大作业，使用以下工具和第三方库
 
