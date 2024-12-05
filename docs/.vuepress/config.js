@@ -39,6 +39,7 @@ export default defineUserConfig({
               { text: 'thefirsts.md', link: '/blog/thefirsts.md'}
             ]
           },
+          { text: '工具', link: '/tools.md'},
           { text: '关于', link: '/about.md'},
           { text: 'Github', link: 'https://github.com/kungfudaibi/kungfudaibi.github.io'},
         ],
