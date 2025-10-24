@@ -31,12 +31,11 @@ export default defineUserConfig({
           { text: '算法', link: '/algorithm.md'},
           { text: '网络安全', link: '/network.md'},
           { text: 'AI', link: '/AI.md'},
-          { text: '百团', link: '/zhaoxin.md'},
           { 
             text: '百团', 
             children:[
               { text: '2024', link: '/baituan/zhaoxin.md'},
-              { text: '2025', link: '/baituan/zhoaxin2.md'}
+              { text: '2025', link: '/baituan/zhaoxin2.md'}
             ]
           },
           { 
