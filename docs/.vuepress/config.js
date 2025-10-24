@@ -33,6 +33,13 @@ export default defineUserConfig({
           { text: 'AI', link: '/AI.md'},
           { text: '百团', link: '/zhaoxin.md'},
           { 
+            text: '百团', 
+            children:[
+              { text: '2024', link: '/baituan/zhaoxin.md'},
+              { text: '2025', link: '/baituan/zhoaxin2.md'}
+            ]
+          },
+          { 
             text: 'blog', 
             children:[
               { text: 'zhujiechong', link: '/blog/zhujiechong.md'},
