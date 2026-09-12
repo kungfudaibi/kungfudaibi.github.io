@@ -1,17 +1,49 @@
 ---
 home: true
-title: Home
-heroImage: /image/logo.svg
-actions:
-  - text: Get Start
-    link: /foreword.md
-    type: primary
-
-
-
-footer: MIT Licensed 
+title: 首页
+config:
+  - type: doc-hero
+    hero:
+      name: 山西大学
+      text: 开源软件协会
+      tagline: 从第一行代码开始，一起学习、分享与创造。
+      image:
+        src: /image/logo.svg
+        alt: 山西大学开源软件协会
+      actions:
+        - theme: brand
+          text: 开始探索 →
+          link: /foreword.md
+        - theme: alt
+          text: 了解协会
+          link: /about.md
+        - theme: alt
+          text: GitHub
+          link: https://github.com/kungfudaibi/kungfudaibi.github.io
+  - type: features
+    features:
+      - title: 自学指南
+        details: 从环境配置到学习方法，找到适合自己的技术学习路线。
+        link: /guide.md
+        linkText: 从这里开始
+      - title: 编程入门
+        details: 跟着 Python 教程动手实践，把想法写成可以运行的代码。
+        link: /代码入门/Python/1-为了什么.md
+        linkText: 阅读教程
+      - title: 人工智能
+        details: 探索机器学习与大模型，收集课程、工具和实践资源。
+        link: /AI.md
+        linkText: 探索 AI
+      - title: Linux 与超算
+        details: 走进开源操作系统与高性能计算，了解更多技术可能。
+        link: /linux.md
+        linkText: 学习 Linux
+      - title: 社团活动
+        details: 看看我们一起做过的项目，认识开源协会里的创作者。
+        link: /baituan/zhaoxin2.md
+        linkText: 看看大家在做什么
+      - title: 实用工具
+        details: 分享文献阅读、学习与开发中值得一试的工具。
+        link: /tools.md
+        linkText: 打开工具箱
 ---
-
-
-
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page

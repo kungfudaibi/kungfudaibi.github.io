@@ -22,5 +22,6 @@ npm run docs:dev
 GitHub Actions 使用 Node.js 24 和 `npm ci` 构建，再发布到 `gh-pages`。
 Vercel 应使用 Node.js 24.x，构建命令为 `npm run docs:build`，输出目录为 `docs/.vuepress/dist`。
 
-全文搜索使用 `@vuepress/plugin-slimsearch`；Giscus 评论使用 `@vuepress/plugin-comment`。
-提示容器由默认主题提供，图片增强使用 `@vuepress/plugin-markdown-image`。
+本地预览使用 `vuepress-theme-plume`，中英文首页通过 `config` 配置首页模块。
+搜索、提示容器和图片增强由 Plume 提供；Giscus 评论继续使用 `@vuepress/plugin-comment`。
+关闭了自动 frontmatter 写入，保留原有文档路径。
