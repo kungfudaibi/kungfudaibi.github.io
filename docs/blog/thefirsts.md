@@ -2,7 +2,7 @@
 
 welcome to SXU helper
 
-![image](image/thefirsts/1731895574709.png)
+![image](./image/thefirsts/1731895574709.png)
 
 # 关于本项目
 
@@ -103,7 +103,7 @@ github地址：https://github.com/xu-zih/sxujw_helper
 
 * 使用阿里云百炼平台，创建智能体应用，将学生手册电子版作为AI知识库，让AI的回答基于此
 
-  ![1731895666829](image/thefirsts/1731895666829.png)
+  ![1731895666829](./image/thefirsts/1731895666829.png)
 * 使用api调用
 
 详情查看/src/gui/ai.py,本项目的api-key几日后注销

@@ -1,8 +1,8 @@
 import { defaultTheme } from '@vuepress/theme-default'
-import { defineUserConfig } from 'vuepress/cli'
+import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
-import { searchProPlugin } from "vuepress-plugin-search-pro"
+import { markdownImagePlugin } from '@vuepress/plugin-markdown-image'
+import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 import { commentPlugin } from '@vuepress/plugin-comment'
 export default defineUserConfig({
   locales: {
@@ -114,20 +114,18 @@ export default defineUserConfig({
     },
   }),
   plugins: [
-    mdEnhancePlugin({
-      // 启用提示容器
-      hint: true,
+    markdownImagePlugin({
       // 启用 figure
       figure: true,
       // 启用图片懒加载
-      imgLazyload: true,
+      lazyload: true,
       // 启用图片标记
-      imgMark: true,
+      mark: true,
       // 启用图片大小
-      imgSize: true,
+      size: true,
 
     }),
-    searchProPlugin({
+    slimsearchPlugin({
       indexContent:true,
     }),
     commentPlugin({
