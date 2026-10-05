@@ -150,5 +150,3 @@ Arch Linux is a minimalistic distribution that focuses on simplicity and flexibi
 I use Arch BTW.
 
 [Installation guide](https://wiki.archlinux.org/title/Installation_guide)
-
-<CommentService/>
