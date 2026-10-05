@@ -1,8 +1,6 @@
-import { defaultTheme } from '@vuepress/theme-default'
-import { defineUserConfig } from 'vuepress/cli'
+import { plumeTheme } from 'vuepress-theme-plume'
+import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
-import { searchProPlugin } from "vuepress-plugin-search-pro"
 import { commentPlugin } from '@vuepress/plugin-comment'
 export default defineUserConfig({
   locales: {
@@ -17,12 +15,19 @@ export default defineUserConfig({
       description: 'SXU Open Source Association',
     },
   },
-  theme: defaultTheme({
+  theme: plumeTheme({
+    autoFrontmatter: false,
+    search: { provider: 'local' },
+    markdown: {
+      image: { figure: true, lazyload: true, mark: true, size: true },
+    },
+    footer: { message: '山西大学开源软件协会 · SXUOSA', copyright: 'MIT Licensed' },
     logo: '/image/logo.svg',
     locales: {
       '/': {
         selectLanguageName: '简体中文',
         navbar: [
+          { text: '学习指南', items: [
           { text: '前言', link: '/foreword.md' },
           { text: '开始', link: '/start.md' },
           { text: '自学指南', link: '/guide.md'},
@@ -31,12 +36,13 @@ export default defineUserConfig({
           { text: '算法', link: '/algorithm.md'},
           { text: '网络安全', link: '/network.md'},
           { text: 'AI', link: '/AI.md'},
+          ] },
           {
             text: "编程入门",
-            children: [
+            items: [
               { 
                 text : "Python",
-                children: [
+                items: [
                   { text: '为了什么', link: '/代码入门/Python/1-为了什么.md' },
                   { text: '安装 Python 与 VSC', link: '/代码入门/Python/2-安装Python与VSC.md' },
                   { text: '基本数据类型', link: '/代码入门/Python/3-基本数据类型.md' },
@@ -69,16 +75,17 @@ export default defineUserConfig({
               }
             ]
           },
-          { 
-            text: '百团', 
-            children:[
+          { text: '协会社区', items: [
+          {
+            text: '百团',
+            items:[
               { text: '2024', link: '/baituan/zhaoxin.md'},
               { text: '2025', link: '/baituan/zhaoxin2.md'}
             ]
           },
           { 
             text: 'blog', 
-            children:[
+            items:[
               { text: 'zhujiechong', link: '/blog/zhujiechong.md'},
               { text: 'thefirsts.md', link: '/blog/thefirsts.md'}
             ]
@@ -86,11 +93,13 @@ export default defineUserConfig({
           { text: '工具', link: '/tools.md'},
           { text: '关于', link: '/about.md'},
           { text: 'Github', link: 'https://github.com/kungfudaibi/kungfudaibi.github.io'},
+          ] },
         ],
       },
       '/en/': {
         selectLanguageName: 'English',
         navbar: [
+          { text: 'Learn', items: [
           { text: 'Introduction', link: '/en/introduction.md' },
           { text: 'Getting Started', link: '/en/getting-started.md' },
           { text: 'Self-taught Guide', link: '/en/self-taught-guide.md'},
@@ -99,37 +108,24 @@ export default defineUserConfig({
           { text: 'Algorithm', link: '/en/algorithm.md'},
           { text: 'Network Security', link: '/en/network-security.md'},
           { text: 'AI', link: '/en/AI.md'},
+          ] },
+          { text: 'Community', items: [
           { text: 'Recruitment', link: '/en/recruitment.md'},
           { 
             text: 'Blogs', 
-            children:[
+            items:[
               { text: 'zhujiechong', link: '/en/blog/zhujiechong.md'},
               { text: 'thefirsts', link: '/en/blog/thefirsts.md'}
             ]
           },
           { text: 'About', link: '/en/about.md'},
           { text: 'Github', link: 'https://github.com/kungfudaibi/kungfudaibi.github.io'},
+          ] },
         ],
       },
     },
   }),
   plugins: [
-    mdEnhancePlugin({
-      // 启用提示容器
-      hint: true,
-      // 启用 figure
-      figure: true,
-      // 启用图片懒加载
-      imgLazyload: true,
-      // 启用图片标记
-      imgMark: true,
-      // 启用图片大小
-      imgSize: true,
-
-    }),
-    searchProPlugin({
-      indexContent:true,
-    }),
     commentPlugin({
       provider: "Giscus",
       repo: "kungfudaibi/kungfudaibi.github.io",

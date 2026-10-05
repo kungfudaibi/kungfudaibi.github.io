@@ -1,4 +1,4 @@
-import { defineClientConfig } from "@vuepress/client";
+import { defineClientConfig } from "vuepress/client";
 import RandomLink from "./components/RandomLink.vue"; // 修改为你的组件实际路径
 
 export default defineClientConfig({
