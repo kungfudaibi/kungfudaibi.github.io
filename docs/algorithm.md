@@ -23,5 +23,3 @@ next: /network
 * [洛谷](https://www.luogu.com.cn/)
 * [Codeforces](https://codeforces.com/)
 * [LeetCode](https://leetcode-cn.com/)
-
-<CommentService/>

@@ -63,6 +63,3 @@ windows非常稳定，所以你可能不会遇到显卡掉了，声音没了，�
 :::important
 是否使用linux只是一个选择问题，在linux里能做的事情在windows里也能做，如果你不愿意折腾系统而更愿意把时间花在别的地方也是完全没问题的
 :::
-
-
-<CommentService/>

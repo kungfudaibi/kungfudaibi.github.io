@@ -92,5 +92,3 @@ by崔晋瑜, ASC19山西大学队队长,山西大学开源软件协会创始人�
 :::info
 [山西大学超算队再获ASC世界大学生超算竞赛一等奖](https://news.sxu.edu.cn/mtsd/4fc1b7817ef94d639763b0bd644b35f9.htm)[背后的故事](https://news.sxu.edu.cn/mtsd/db73d2ec261246ec82451369b9e7587f.htm)
 :::
-
-<CommentService/>
