@@ -20,21 +20,31 @@ next: /代码入门/Python/3-基本数据类型.md
 
 ## 安装运行环境
 
-Python 是一款解释性程序设计语言，我们首先要在你的设备上安装 Python 解释器才能够运行 Python 语言的代码。
+Python 是一款<u>解释性程序设计语言</u>*，我们首先要在你的设备上安装 Python 解释器才能够运行 Python 语言的代码。
+
+> 解释性程序设计语言：指的是在代码执行过程中，由解释器将程序码逐一转换为计算机进行操作的指令，再交由机器执行的一种程序设计语言。
 
 ### Windows 设备
 
 首先，[点击此处即可从 Python 官网下载 Python 解释器](https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe)，并如下图所示安装。
 
-![](./2-image/甲.jpg)
-![](./2-image/乙.jpg)
-![](./2-image/丙.jpg)
+![](./2-image/Python安装·甲.jpg)
+![](./2-image/Python安装·乙.jpg)
+![](./2-image/Python安装·丙.jpg)
 
 好了，安装完成，接下来，我们来测试一下 Python 是否安装成功。
 
+1. 用鼠标右键你的开始菜单，打开“终端”（在 Windows 8~10 下，右键开始菜单，打开“PowerShell”；在 Windows 95~7 下，请在开始菜单搜索“cmd”，打开“命令提示符”）如下图：
+
+<table><tr>
+<td><img src="./2-image/打开控制台·Win11.png"></td>
+<td><img src="./2-image/打开控制台·Win10.png"></td>
+</tr><tr><td>Windows 11</td><td>Windows 10</td></tr></table>
+
+
 ### Android 设备
 
-> 以下教程修改自笔者的其他仓库内容，因此依照 汉钰律许可协议，第一版 授权
+> 以下教程修改自笔者的其他仓库内容，因此依照**汉钰律许可协议，第一版**授权。
 > 任何人皆可从以下地址获得本协议副本：https://gitee.com/EillesWan/YulvLicenses。
 > 若非因法律要求或经过了特殊准许，此作品在根据本协议“原样”提供的基础上，不予提供任何形式的担保、任何明示、任何暗示或类似承诺。也就是说，用户将自行承担因此作品的质量或性能问题而产生的全部风险。
 > 详细的准许和限制条款请见原协议文本。
@@ -59,7 +69,7 @@ Python 是一款解释性程序设计语言，我们首先要在你的设备上�
     
 	恭喜你，你已经获得了一个极客般流畅地操作你手机的终端工具。
 
-###	安装运行环境
+####	安装运行环境
 
 1.	换源
 
@@ -74,35 +84,39 @@ Python 是一款解释性程序设计语言，我们首先要在你的设备上�
 	```
 
 	*感谢 天如<QQ 3291691454>为我们带来的简单换源方法。*
-    
-	-	*非必要步骤*：手动编辑换源
 
-		> **注意** 这是非必要的步骤，执行了也没有好处，小白别闲着没事干。
-    
-		如果你闲着没事，非要要手动编辑个文档来换源，那就可以遵循这一部分的内容，我们先打开 **nano** 吧。
+    <details open>
 
-		在 **Termux** 中，输入以下指令：
+	<summary>*非必要步骤*：手动编辑换源</summary>
 
+	> **注意** 这是非必要的步骤，执行了也没有好处，小白别闲着没事干。
+
+	如果你闲着没事，非要要手动编辑个文档来换源，那就可以遵循这一部分的内容，我们先打开 **nano** 吧。
+
+	在 **Termux** 中，输入以下指令：
+
+	```bash
+	export EDITOR=nano
+	apt edit-sources
+	```
+	
+	那么请把看到的如左下图的界面变为右下图吧：
+
+	<table><tr>
+	<td><img src="https://foruda.gitee.com/images/1665933104313107707/41108f03_9911226.jpeg"></td>
+	<td><img src="https://foruda.gitee.com/images/1665933122534781330/3887a901_9911226.jpeg"></td>
+	</tr></table>
+
+	- 图片中的文件，最后应该加入的两行为：
+	
 		```bash
-		export EDITOR=nano
-		apt edit-sources
+		deb https://mirrors.ustc.edu.cn/termux/apt/termux-main/ stable main
+		deb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main/ stable main
 		```
-		
-		那么请把看到的如左下图的界面变为右下图吧：
 
-		<table><tr>
-		<td><img src="https://foruda.gitee.com/images/1665933104313107707/41108f03_9911226.jpeg"></td>
-		<td><img src="https://foruda.gitee.com/images/1665933122534781330/3887a901_9911226.jpeg"></td>
-		</tr></table>
+	然后键入 `Ctrl`+`S`，再键入 `Ctrl`+`X`，退出`nano`。
 
-		- 图片中的文件，最后应该加入的两行为：
-		
-			```bash
-			deb https://mirrors.ustc.edu.cn/termux/apt/termux-main/ stable main
-			deb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main/ stable main
-			```
-
-		然后键入 `Ctrl`+`S`，再键入 `Ctrl`+`X`，退出`nano`。
+	</details>
 
 	在换源之后，你可能会见到类似的提示（“可能会”的意思是也可能不会）：
 
@@ -124,14 +138,14 @@ Python 是一款解释性程序设计语言，我们首先要在你的设备上�
 	apt-get install python3
 	```
 
-	如果遇到提示问是否继续，那就输入`Y`表示是，如左下图，安装成功后，图若右下。
+	如果遇到提示问是否继续，那就输入`Y`表示是（如下左图），安装成功后，图若下右。
 
 	<table><tr>
 	<td><img src="https://foruda.gitee.com/images/1665933181440420034/7f0fb5fd_9911226.jpeg"></td>
 	<td><img src="https://foruda.gitee.com/images/1665933238339972260/a9f06f4f_9911226.jpeg"></td>
 	</tr></table>
 
-	接下来，我们来试一试 **Python** 是不是安装成了吧，输入
+	接下来，我们来试一试 **Python** 是不是安装成功了吧，输入
 
 	```bash
 	python3 -V
@@ -143,7 +157,17 @@ Python 是一款解释性程序设计语言，我们首先要在你的设备上�
 
 ### Linux 或 Mac 设备
 
-不好意思，我歧视 Mac 用户，因此不写 Mac 的安装教程。至于 Linux，你都用 Linux 了，你自己还不清楚吗？
+不好意思，我歧视 Mac 用户，因此不写 Mac 的安装教程。至于 Linux，你都用 Linux 了，你自己还不清楚怎么安装 Python 吗？
+
+## 测试第一个程序
+
+现在，让我们在桌面上新建一个文本文档，并输入以下内容：
+
+```python
+print("Hello World!")
+```
+
+
 
 > TODO: 未完待续。
 
